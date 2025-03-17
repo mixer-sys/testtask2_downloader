@@ -1,0 +1,5 @@
+venv/
+~
+.env
+__pacache__/*
+*.exe

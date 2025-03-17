@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Wildberries Feadback Video Downloader",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "download_video": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Download video"
+        }
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
