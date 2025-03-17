@@ -44,7 +44,6 @@ async function downloadAndMergeSegments() {
     
     const a = document.createElement('a');
     a.style.display = 'none';
-    a.download = 'test.ts';
     a.href = url;
     document.body.appendChild(a);
     a.click();
